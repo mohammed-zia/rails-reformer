@@ -4,33 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New User</title>
+  <title>Edit User</title>
 </head>
 <body>
 
-<h1>Create a new user</h1>
+<h1>Edit an existing user</h1>
 <div class="form-container">
-  <%# <form action="/users" method="post" accept-charset="utf-8">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="user[username]"><br><br>
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="user[email]"><br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="user[password]"><br><br>
-    <input type="submit" value="Submit">
-  </form> %>
-  
-  <%# <%= form_tag("/users", method: "post") do %>
-    <%# <%= label_tag(:username, "Username:") %> 
-    <%# <%= text_field_tag(:username)%>
-    <%# <%= label_tag(:email, "E-mail:") %> 
-    <%# <%= email_field_tag(:email) %>
-    <%# <%= label_tag(:password, "Password:") %> 
-    <%# <%= password_field_tag(:password) %>
-    <%# <%= submit_tag("Submit") %> 
-  <%# <% end %> 
-
-  <%# <%= form_with scope: :user, url: users_path do |form| %> 
+  <%# <%= form_with scope: :user, url: users_path do |form| %>
   <%= form_with model: @user do |form| %>
     <% if @user.errors.any? %>
       <div style="color: red">
